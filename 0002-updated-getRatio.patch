@@ -1,0 +1,28 @@
+From fce44f68ef8d6fdba2fba6df9a72c3810f0a936e Mon Sep 17 00:00:00 2001
+From: Kalyan Akula <kalyan3214akula@gmail.com>
+Date: Wed, 11 Sep 2024 11:05:03 +0530
+Subject: [PATCH 2/3] updated getRatio
+
+---
+ client3.py | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+
+diff --git a/client3.py b/client3.py
+index 774145a..c42b938 100644
+--- a/client3.py
++++ b/client3.py
+@@ -42,7 +42,10 @@ def getDataPoint(quote):
+ def getRatio(price_a, price_b):
+     """ Get ratio of price_a and price_b """
+     """ ------------- Update this function ------------- """
+-    return 1
++    if price_b == 0:
++        return
++    else :
++        return price_a/price_b
+ 
+ 
+ # Main
+-- 
+2.46.0.windows.1
+
